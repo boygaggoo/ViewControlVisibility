@@ -5,8 +5,6 @@ import android.view.View;
 import java.util.Arrays;
 import java.util.HashSet;
 
-import static com.jbarbosa.viewcontrolvisibility.Constants.VIEW_NULL;
-
 /**
  * Created by Josinaldo on 06/07/2015.
  */
@@ -31,11 +29,10 @@ public class ViewControlVisibility {
         hideAll();
 
         for (View view : views) {
-            if (mViews.contains(view)) {
+            if (mViews.contains(view))
                 turnVisible(view);
-            } else {
+            else
                 throw new IllegalStateException(Constants.TAG + Constants.VIEW_NOT_FOUND);
-            }
         }
     }
 
