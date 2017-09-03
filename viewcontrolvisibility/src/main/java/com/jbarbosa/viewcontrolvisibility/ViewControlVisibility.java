@@ -41,21 +41,21 @@ public class ViewControlVisibility {
         if (view != null)
             view.setVisibility(View.VISIBLE);
         else
-            throw new IllegalStateException(Constants.TAG + VIEW_NULL);
+            throw new IllegalStateException(Constants.TAG + Constants.VIEW_NULL);
     }
 
     public static void turnGone(View view) {
         if (view != null)
             view.setVisibility(View.GONE);
         else
-            throw new IllegalStateException(Constants.TAG + VIEW_NULL);
+            throw new IllegalStateException(Constants.TAG + Constants.VIEW_NULL);
     }
 
     public static void turnInvisible(View view) {
         if (view != null)
             view.setVisibility(View.INVISIBLE);
         else
-            throw new IllegalStateException(Constants.TAG + VIEW_NULL);
+            throw new IllegalStateException(Constants.TAG + Constants.VIEW_NULL);
     }
 
 }
