@@ -44,7 +44,7 @@ private void layoutContentErrorAndLoader() {
 @BindView(R.id.layoutContent) View layoutContent;
 @BindView(R.id.layoutContentError) View layoutContentError;
 @BindView(R.id.layoutLoader) View layoutLoader;
-private ViewControl mLayoutControlVisibility;
+private ViewControlVisibility mLayoutControlVisibility;
 
 @Override
 public void onCreate(...) {
