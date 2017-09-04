@@ -14,9 +14,16 @@ public class ViewControlVisibility {
     private HashSet<View> mViews;
 
     public ViewControlVisibility(View... views) {
+        this(false, views);
+    }
+
+    public ViewControlVisibility(boolean startAllHide, View... views) {
         mViews = new HashSet<>();
         mViews.addAll(Arrays.asList(views));
-        hideAll();
+
+        if (startAllHide) {
+            hideAll();
+        }
     }
 
     private void hideAll() {
